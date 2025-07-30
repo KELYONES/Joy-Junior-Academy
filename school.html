@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our School</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+<header class="bg-[#0A2342] text-white shadow-md border-b-2 border-[#FFD700] fixed top-0 left-0 w-full z-50"> 
+  <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center py-4">
+       <div class="flex items-center">
+         <img src="./images/Academy-logo.png" class="w-16 h-16 md:w-24 md:h-24" alt="School Logo">
+        <div class="">
+          <div class="text-2xl font-bold ml-2 md:text-3xl">JOY JUNIOR ACADEMY</div>
+          <P class="text-sm text-gray-300 ml-2">BUNGOMA, KENYA</P>
+        </div>  
+       </div>
+      <!-- Desktop Nav -->
+      <div class="hidden md:flex items-center space-x-6">
+        <a href="#" class="hover:text-[#FFD700]">Home</a>
+        <div class="relative group">
+          <button class="text-white hover:text-[#FFD700] focus:outline-none">
+            About
+          </button>
+          <div class="absolute left-0 mt-2 w-48 bg-white border rounded shadow-lg 
+                      opacity-0 group-hover:opacity-100 
+                      invisible group-hover:visible 
+                      transition-all duration-300 z-50">
+            <a href="./school.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-100">Our School</a>          
+            <a href="./staff.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-100">Staff</a>
+            <a href="./student.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-100">Students corner</a>
+            <a href="./career.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-100">Careers</a>
+            <a href="./alumni.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-100">Alumni</a>
+            <a href="./gallery.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-100">Gallery</a>
+            <a href="./pastoral.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-100">Pastoral Care</a>
+          </div>
+        </div>
+         <div class="relative group">
+          <button class="text-white hover:text-[#FFD700] focus:outline-none">
+            Services
+          </button>
+          <div class="absolute left-0 mt-2 w-48 bg-white border rounded shadow-lg 
+                      opacity-0 group-hover:opacity-100 
+                      invisible group-hover:visible 
+                      transition-all duration-300 z-50">
+            <a href=""></a>
+            <a href="./feeding.html"class="block px-4 py-2 text-gray-700 hover:bg-blue-100">Feeding Program</a>
+            <a href="./daycare.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-100"> Daycare</a>
+            <a href="./counselling.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-100">Counselling</a>
+            <a href="./tours.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-100">Tours</a>
+            <a href="./clubs.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-100">Clubs</a> 
+          </div>
+        </div>
+         <div class="relative group">
+          <button class="text-white hover:text-[#FFD700] focus:outline-none">
+            Academics
+          </button>
+          <div class="absolute left-0 mt-2 w-48 bg-white border rounded shadow-lg 
+                      opacity-0 group-hover:opacity-100 
+                      invisible group-hover:visible 
+                      transition-all duration-300 z-50">
+            <a href="./academic.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-100">Academic results</a>
+            <a href="./cbc.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-100">CBC Curriculum</a>
+            <a href="./practicals.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-100">Practical Lessons</a>
+            <a href="./competency.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-100">Competency Areas</a>
+            <a href="./club.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-100">Clubs</a>
+            <a href="./graduation.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-100">Graduation</a>
+          </div>
+        </div>
+          <div class="relative group">
+          <button class="text-white hover:text-[#FFD700] focus:outline-none">
+           Admissions
+          </button>
+          <div class="absolute left-0 mt-2 w-48 bg-white border rounded shadow-lg 
+                      opacity-0 group-hover:opacity-100 
+                      invisible group-hover:visible 
+                      transition-all duration-300 z-50">
+            <a href="./admissions.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-100">Admission process</a>
+            <a href="./fees.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-100">Fees</a>
+            <a href="./questions.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-100">FAQs</a>
+          </div>
+        </div>
+         
+        <a href="./events.html" class="hover:text-[#FFD700]">Events/News</a>
+        <a href="./contact.html" class="hover:text-[#FFD700]">Contact Us</a>
+        <a href="./login.html" class="px-4 py-1 border border-white rounded hover:bg-white hover:text-[#0A2342]">Login</a>
+        <a href="./signup.html" class="px-4 py-1 bg-[#FFD700] text-[#0A2342] rounded hover:bg-yellow-400">Sign Up</a>
+      </div>
+
+      <!-- Mobile Toggle -->
+      <button id="menu-toggle" class="md:hidden focus:outline-none">
+        <svg class="w-9 h-9" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
+<!-- Overlay -->
+<div id="overlay" class="hidden fixed inset-0 bg-black bg-opacity-40 z-40 md:hidden"></div>
+<div class="relative w-full h-[500px]">
+  <img src="./images/school.png" alt="School Gate" class="w-full h-full object-cover">
+  <div class="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-yellow-500 text-4xl md:text-6xl font-bold drop-shadow-lg whitespace-nowrap">
+    About Our School
+  </div>
+</div>
+
+  <!-- Intro Paragraph -->
+  <section class="max-w-5xl mx-auto py-12 px-6">
+    <h2 class="text-3xl font-bold text-blue-900 mb-4">Our Story</h2>
+    <p class="text-lg leading-relaxed text-gray-700">
+      Joy Miracle School was founded by the local church after observing a deep need for nurturing children in both academics and character. The initiative was not only to provide education but also to support the government’s efforts in reducing unemployment. With several professional teachers within the church, the school was born—an environment where children could grow intellectually and morally. Through dedicated staff, we aim to raise a generation that excels in knowledge and upholds strong values.
+    </p>
+  </section>
+
+  <!-- Mission, Vision, Core Values -->
+  <section class="bg-white py-16 px-6">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-10">
+      <!-- Mission -->
+      <div class="bg-blue-50 p-6 rounded-lg shadow-md border-t-4 border-blue-600">
+        <h3 class="text-xl font-semibold text-blue-800 mb-2">Our Mission</h3>
+        <p>To provide holistic education that nurtures intellect, character, and spiritual growth.</p>
+      </div>
+
+      <!-- Vision -->
+      <div class="bg-blue-50 p-6 rounded-lg shadow-md border-t-4 border-yellow-600">
+        <h3 class="text-xl font-semibold text-yellow-700 mb-2">Our Vision</h3>
+        <p>To become a leading institution known for academic excellence and moral integrity.</p>
+      </div>
+
+      <!-- Core Values -->
+      <div class="bg-blue-50 p-6 rounded-lg shadow-md border-t-4 border-green-600">
+        <h3 class="text-xl font-semibold text-green-700 mb-2">Core Values</h3>
+        <ul class="list-disc list-inside space-y-1">
+          <li>Discipline</li>
+          <li>Excellence</li>
+          <li>Integrity</li>
+          <li>Teamwork</li>
+          <li>Faith</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="bg-blue-900 text-white py-12 text-center">
+    <h2 class="text-3xl font-bold mb-4">Join the Joy Miracle School Family</h2>
+    <p class="mb-6 text-lg">We welcome all learners who are ready to grow in knowledge and values.</p>
+    <a href="contact.html" class="inline-block bg-yellow-400 hover:bg-yellow-500 text-blue-900 font-semibold px-6 py-3 rounded shadow-md transition duration-300">
+      Contact Us
+    </a>
+  </section>
+  <footer class="bg-[#0A2342] text-white py-12">
+  <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-4 gap-8">
+    <!-- About the School -->
+    <div>
+      <h3 class="text-xl font-bold mb-4">About Joy Junior Academy</h3>
+      <p class="text-sm text-gray-300">
+        Joy Junior Academy is dedicated to offering quality education that nurtures the academic and spiritual growth of every child. Founded on strong Christian values and excellence.
+      </p>
+    </div>
+
+    <!-- Quick Links -->
+    <div>
+      <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+      <ul class="space-y-2 text-sm text-gray-300">
+        <li><a href="./index.html" class="hover:text-white transition">Home</a></li>
+        <li><a href="./school.html" class="hover:text-white transition">About Us</a></li>
+        <li><a href="./acadenics" class="hover:text-white transition">Academics</a></li>
+        <li><a href="./admissions" class="hover:text-white transition">Admissions</a></li>
+        <li><a href="./contact.html" class="hover:text-white transition">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <!-- School Details -->
+    <div>
+      <h3 class="text-xl font-bold mb-4">School Info</h3>
+      <p class="text-sm text-gray-300">Location: Bungoma, Kenya</p>
+      <p class="text-sm text-gray-300">Phone: +254 712 345 678</p>
+      <p class="text-sm text-gray-300">Email: info@joyjunior.ac.ke</p>
+    </div>
+
+    <!-- Newsletter -->
+    <div>
+      <h3 class="text-xl font-bold mb-4">Subscribe to Updates</h3>
+      <form class="space-y-4">
+        <input type="email" placeholder="Your email address"
+          class="w-full px-4 py-2 rounded-md text-gray-900 bg-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-gold focus:border-transparent" />
+        <button type="submit"
+          class="w-full bg-yellow-600 hover:bg-blue-900 text-blue-900 hover:text-yellow-600 font-semibold py-2 px-4 rounded-md transition">Subscribe</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="mt-12 border-t border-gray-700 pt-6 text-center text-sm text-gray-400">
+    &copy; 2025 Joy Junior Academy. All rights reserved.
+  </div>
+</footer>
+
+  
+<script>
+  // Mobile menu toggle
+  const menuToggle = document.getElementById("menu-toggle");
+  const mobileMenu = document.getElementById("mobile-menu");
+  const menuClose = document.getElementById("menu-close");
+
+  menuToggle.addEventListener("click", () => {
+    mobileMenu.classList.remove("translate-x-full");
+  });
+
+  menuClose.addEventListener("click", () => {
+    mobileMenu.classList.add("translate-x-full");
+  });
+
+  // Mobile dropdowns
+  const dropdownButtons = document.querySelectorAll("#mobile-menu button[id^='mobile-dropdown-btn']");
+
+  dropdownButtons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const dropdown = btn.nextElementSibling;
+
+      if (dropdown.classList.contains("hidden")) {
+        dropdown.classList.remove("hidden");
+      } else {
+        dropdown.classList.add("hidden");
+      }
+    });
+  });
+</script>
+
+</body>
+</html>

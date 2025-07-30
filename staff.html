@@ -1,0 +1,379 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our School</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+<body>
+  <header class="bg-[#0A2342] text-white shadow-md border-b-2 border-[#FFD700] fixed top-0 left-0 w-full z-50"> 
+  <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center py-4">
+       <div class="flex items-center">
+         <img src="./images/Academy-logo.png" class="w-16 h-16 md:w-24 md:h-24" alt="School Logo">
+        <div class="">
+          <div class="text-2xl font-bold ml-2 md:text-3xl">JOY JUNIOR ACADEMY</div>
+          <P class="text-sm text-gray-300 ml-2">BUNGOMA, KENYA</P>
+        </div>  
+       </div>
+      <!-- Desktop Nav -->
+      <div class="hidden md:flex items-center space-x-6">
+        <a href="#" class="hover:text-[#FFD700]">Home</a>
+        <div class="relative group">
+          <button class="text-white hover:text-[#FFD700] focus:outline-none">
+            About
+          </button>
+          <div class="absolute left-0 mt-2 w-48 bg-white border rounded shadow-lg 
+                      opacity-0 group-hover:opacity-100 
+                      invisible group-hover:visible 
+                      transition-all duration-300 z-50">
+            <a href="./school.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-100">Our School</a>          
+            <a href="./staff.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-100">Staff</a>
+            <a href="./student.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-100">Students corner</a>
+            <a href="./career.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-100">Careers</a>
+            <a href="./alumni.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-100">Alumni</a>
+            <a href="./gallery.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-100">Gallery</a>
+            <a href="./pastoral.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-100">Pastoral Care</a>
+          </div>
+        </div>
+         <div class="relative group">
+          <button class="text-white hover:text-[#FFD700] focus:outline-none">
+            Services
+          </button>
+          <div class="absolute left-0 mt-2 w-48 bg-white border rounded shadow-lg 
+                      opacity-0 group-hover:opacity-100 
+                      invisible group-hover:visible 
+                      transition-all duration-300 z-50">
+            <a href=""></a>
+            <a href="./feeding.html"class="block px-4 py-2 text-gray-700 hover:bg-blue-100">Feeding Program</a>
+            <a href="./daycare.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-100"> Daycare</a>
+            <a href="./counselling.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-100">Counselling</a>
+            <a href="./tours.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-100">Tours</a>
+            <a href="./clubs.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-100">Clubs</a> 
+          </div>
+        </div>
+         <div class="relative group">
+          <button class="text-white hover:text-[#FFD700] focus:outline-none">
+            Academics
+          </button>
+          <div class="absolute left-0 mt-2 w-48 bg-white border rounded shadow-lg 
+                      opacity-0 group-hover:opacity-100 
+                      invisible group-hover:visible 
+                      transition-all duration-300 z-50">
+            <a href="./academic.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-100">Academic results</a>
+            <a href="./cbc.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-100">CBC Curriculum</a>
+            <a href="./practicals.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-100">Practical Lessons</a>
+            <a href="./competency.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-100">Competency Areas</a>
+            <a href="./club.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-100">Clubs</a>
+            <a href="./graduation.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-100">Graduation</a>
+          </div>
+        </div>
+          <div class="relative group">
+          <button class="text-white hover:text-[#FFD700] focus:outline-none">
+           Admissions
+          </button>
+          <div class="absolute left-0 mt-2 w-48 bg-white border rounded shadow-lg 
+                      opacity-0 group-hover:opacity-100 
+                      invisible group-hover:visible 
+                      transition-all duration-300 z-50">
+            <a href="./admissions.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-100">Admission process</a>
+            <a href="./fees.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-100">Fees</a>
+            <a href="./questions.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-100">FAQs</a>
+          </div>
+        </div>
+         
+        <a href="./events.html" class="hover:text-[#FFD700]">Events/News</a>
+        <a href="./contact.html" class="hover:text-[#FFD700]">Contact Us</a>
+        <a href="./login.html" class="px-4 py-1 border border-white rounded hover:bg-white hover:text-[#0A2342]">Login</a>
+        <a href="./signup.html" class="px-4 py-1 bg-[#FFD700] text-[#0A2342] rounded hover:bg-yellow-400">Sign Up</a>
+      </div>
+
+      <!-- Mobile Toggle -->
+      <button id="menu-toggle" class="md:hidden focus:outline-none">
+        <svg class="w-9 h-9" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile Side Menu -->
+<div id="mobile-menu"
+  class="fixed top-0 right-0 w-3/5 h-full bg-[#0A2342] text-white shadow-lg z-50 transform translate-x-full transition-transform duration-300 ease-in-out md:hidden">
+
+  <div class="p-4">
+    <!-- Close Button -->
+    <button id="menu-close" class="mb-6 float-right focus:outline-none">
+      <svg class="w-6 h-6" fill="none" stroke="white" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
+
+    <!-- Links -->
+    <nav class="mt-12 space-y-4">
+      <a href="./index.html" class="block hover:text-[#FFD700]">Home</a>
+      <div>
+        <button id="mobile-dropdown-btn" class="w-full text-left py-2 text-white hover:text-yellow-600">
+          About us ▾ 
+        </button>
+          <div id="mobile-dropdown" class="hidden pl-4 border-l border-gray-300">
+            <a href="./school.html" class="block px-4 py-2 text-yellow-400 hover:bg-blue-100">Our School</a>
+            <a href="./staff.html" class="block px-4 py-2 text-yellow-400 hover:bg-blue-100">Staff</a>
+            <a href="./student.html" class="block px-4 py-2 text-yellow-400 hover:bg-blue-100">Students corner</a>
+            <a href="./career.html" class="block px-4 py-2 text-yellow-400 hover:bg-blue-100">Careers</a>
+            <a href="./alumni.htm" class="block px-4 py-2 text-yellow-400 hover:bg-blue-100">Alumni</a>
+            <a href="./gallery.html" class="block px-4 py-2 text-yellow-400 hover:bg-blue-100">Gallery</a>
+            <a href="./pastoral.html" class="block px-4 py-2 text-yellow-400 hover:bg-blue-100">Pastoral Care</a>
+            <a href="./board.html" class="block px-4 py-2 text-yellow-400 hover:bg-blue-100">Board of members</a>
+          </div>
+      </div>    
+      <div>
+        <button id="mobile-dropdown-btn" class="w-full text-left py-2 text-white hover:text-yellow-600">
+          Services ▾ 
+        </button>
+          <div id="mobile-dropdown" class="hidden pl-4 border-l border-gray-300">
+            <a href="./feeding.html"class="block px-4 py-2 text-yellow-400 hover:bg-blue-100">Feeding Program</a>
+            <a href="./daycare.html" class="block px-4 py-2 text-yellow-400 hover:bg-blue-100"> Daycare</a>
+            <a href="./counsel.html" class="block px-4 py-2 text-yellow-400 hover:bg-blue-100">Counselling</a>
+            <a href="./tour.html" class="block px-4 py-2 text-yellow-400 hover:bg-blue-100">Tours</a>
+          </div>
+      </div>
+      <div>
+        <button id="mobile-dropdown-btn" class="w-full text-left py-2 text-white hover:text-yellow-600">
+          Academics ▾ 
+        </button>
+          <div id="mobile-dropdown" class="hidden pl-4 border-l border-gray-300">
+             <a href="./academic.html" class="block px-4 py-2 text-yellow-400 hover:bg-blue-100">Academic results</a>
+            <a href="./cbc.html" class="block px-4 py-2 text-yellow-400 hover:bg-blue-100">CBC Curriculum</a>
+            <a href="./practicals.html" class="block px-4 py-2 text-yellow-400 hover:bg-blue-100">Practical Lessons</a>
+            <a href="./competency.html" class="block px-4 py-2 text-yellow-400 hover:bg-blue-100">Competency Areas</a>
+            <a href="./tuition.html" class="block px-4 py-2 text-yellow-400 hover:bg-blue-100">Holiday Tuition</a>
+            <a href="./clubs.html" class="block px-4 py-2 text-yellow-400 hover:bg-blue-100">Clubs</a>
+            <a href="./graduation.html" class="block px-4 py-2 text-yellow-400 hover:bg-blue-100">Graduation</a>
+          </div>
+      </div>
+      <div>
+        <button id="mobile-dropdown-btn" class="w-full text-left py-2 text-white hover:text-yellow-600">
+          Academics ▾ 
+        </button>
+          <div id="mobile-dropdown" class="hidden pl-4 border-l border-gray-300">
+            <a href="./admission.html" class="block px-4 py-2 text-yellow-400 hover:bg-blue-100">Admission process</a>
+            <a href="./fee.html" class="block px-4 py-2 text-yellow-400 hover:bg-blue-100">Fees</a>
+            <a href="./questions.html" class="block px-4 py-2 text-yellow-400 hover:bg-blue-100">FAQs</a>
+          </div>
+      </div>    
+      <a href="./events.html" class="block hover:text-[#FFD700]">Events/News</a>
+      <a href="./contact.html" class="block hover:text-[#FFD700]">Contact Us</a>
+      <div class="pt-2 border-t border-white mt-4 space-y-2">
+        <a href="./login.html" class="block text-center border border-white py-2 rounded hover:bg-white hover:text-[#0A2342]">Login</a>
+        <a href="./signup.html" class="block text-center bg-[#FFD700] text-[#0A2342] py-2 rounded hover:bg-yellow-400">Sign Up</a>
+      </div>
+    </nav>
+  </div>
+</div>
+  
+
+<!-- Overlay -->
+<div id="overlay" class="hidden fixed inset-0 bg-black bg-opacity-40 z-40 md:hidden"></div>
+
+<section class="relative h-[70vh] w-full bg-gradient-to-br from-[#0A2342] via-[#13335c] to-[#1f3b73] text-white flex items-center justify-center px-6">
+  <!-- Overlay for optional background photo -->
+  <div class="absolute inset-0 bg-[url('./images/staff1.png')] bg-cover bg-center opacity-40 z-0"></div>
+
+  <!-- Content -->
+  <div class="relative z-10 text-center animate-fadeInUp">
+    <h1 class="text-4xl md:text-6xl font-bold mb-4 drop-shadow-xl">Meet the Faces Behind Our Mission</h1>
+    <p class="text-lg md:text-xl max-w-2xl mx-auto font-light text-gray-200">Get to know the dedicated team of teachers and staff who make learning possible every day.</p>
+  </div>
+</section>
+
+<section class="bg-white py-16 px-6 md:px-20 text-gray-800">
+  <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10">
+    
+    <!-- Text -->
+    <div class="md:w-1/2">
+      <h2 class="text-3xl font-bold mb-4 text-[#0A2342]">Teaching Staff</h2>
+      <p class="text-lg leading-relaxed">
+        Our teaching staff forms the academic backbone of the institution, dedicated to nurturing young minds with knowledge, creativity, and care. Each teacher brings a unique blend of expertise, patience, and a genuine love for teaching that goes beyond the classroom. With diverse backgrounds and specialties, they work together to ensure that every learner receives a well-rounded and meaningful education.
+      </p>
+    </div>
+
+    <!-- Image -->
+    <div class="md:w-1/2">
+      <img src="./images/staff1.png" alt="Teaching Staff" class="w-full h-auto rounded-xl shadow-md">
+    </div>
+
+  </div>
+</section>
+<section class="bg-gray-100 py-16 px-6 md:px-20 text-gray-800">
+  <div class="max-w-6xl mx-auto flex flex-col md:flex-row-reverse items-center gap-10">
+
+    <!-- Text -->
+    <div class="md:w-1/2">
+      <h2 class="text-3xl font-bold mb-4 text-[#0A2342]">Non-Teaching Staff</h2>
+      <p class="text-lg leading-relaxed">
+        Behind the scenes, our non-teaching staff keep the wheels turning with tireless dedication. From administrators and support staff to groundskeepers and security, they uphold the systems that allow smooth day-to-day operations. Their roles may not be in front of a classroom, but their contributions are vital to the comfort, safety, and efficiency of the school environment.
+      </p>
+    </div>
+
+    <!-- Image -->
+    <div class="md:w-1/2">
+      <img src="./images/staff2.png" alt="Non-Teaching Staff" class="w-full h-auto rounded-xl shadow-md">
+    </div>
+
+  </div>
+</section>
+<section class="bg-gray-100 py-16 px-6 md:px-20">
+  <div class="max-w-7xl mx-auto text-center mb-12">
+    <h2 class="text-4xl font-bold text-darkblue mb-4">Staff Achievements & Milestones</h2>
+    <p class="text-gray-700 text-lg max-w-3xl mx-auto">
+      At the heart of our institution's growth lies the unwavering dedication of our team. This section highlights key moments and efforts that reflect the professionalism, hard work, and passion our staff continue to demonstrate year after year.
+    </p>
+  </div>
+
+  <div class="grid md:grid-cols-2 gap-8">
+    <!-- Card 1 -->
+    <div class="bg-white shadow-lg rounded-xl p-6">
+      <h3 class="text-2xl font-semibold text-darkblue mb-2">Promotions & Awards</h3>
+      <p class="text-gray-700">
+        Several of our staff members have received internal and national recognition for excellence in teaching, leadership, and innovation. Their achievements reflect our shared values of growth and impact.
+      </p>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="bg-white shadow-lg rounded-xl p-6">
+      <h3 class="text-2xl font-semibold text-darkblue mb-2">Training & Certifications</h3>
+      <p class="text-gray-700">
+        Continuous professional development is encouraged and supported. Many have successfully completed industry-standard certifications in ICT, special education, child psychology, administration, and more.
+      </p>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="bg-white shadow-lg rounded-xl p-6">
+      <h3 class="text-2xl font-semibold text-darkblue mb-2">Years of Service</h3>
+      <p class="text-gray-700">
+        Loyalty and consistency matter. We’re proud to celebrate long-serving staff who have been with us for 5, 10, even 15+ years — a true testament to the positive environment we nurture.
+      </p>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="bg-white shadow-lg rounded-xl p-6">
+      <h3 class="text-2xl font-semibold text-darkblue mb-2">Appreciation & Wellness</h3>
+      <p class="text-gray-700">
+        From annual retreats and wellness days to award ceremonies and birthday surprises, we value every team member beyond their roles — we celebrate them as people.
+      </p>
+    </div>
+  </div>
+</section>
+<section class="bg-gradient-to-r from-blue-950 via-blue-900 to-blue-950 text-white py-16 px-6 md:px-20">
+  <div class="max-w-5xl mx-auto text-center">
+    <h2 class="text-3xl md:text-4xl font-bold mb-4">Behind Every Great Institution is a Great Team</h2>
+    <p class="text-lg md:text-xl mb-8">
+      From the dedicated teachers shaping young minds to the support staff ensuring everything runs smoothly — 
+      our team is the heartbeat of this institution. We welcome you to get to know them better and celebrate 
+      their unwavering commitment to excellence.
+    </p>
+    <a href="#contact" class="inline-block bg-white text-blue-900 font-semibold py-3 px-6 rounded-full shadow-md hover:bg-blue-100 transition duration-300">
+      Get in Touch With Us
+    </a>
+  </div>
+</section>
+<section class="bg-blue-50 py-12 px-6 text-center">
+  <div class="max-w-3xl mx-auto">
+    <p class="text-xl md:text-2xl italic text-gray-700 mb-4">
+      “Start children off on the way they should go, and even when they are old they will not turn from it.”
+    </p>
+    <p class="text-lg font-semibold text-blue-900">— Proverbs 22:6 (NIV)</p>
+  </div>
+</section>
+
+
+
+
+
+  <footer class="bg-[#0A2342] text-white py-12">
+  <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-4 gap-8">
+    <!-- About the School -->
+    <div>
+      <h3 class="text-xl font-bold mb-4">About Joy Junior Academy</h3>
+      <p class="text-sm text-gray-300">
+        Joy Junior Academy is dedicated to offering quality education that nurtures the academic and spiritual growth of every child. Founded on strong Christian values and excellence.
+      </p>
+    </div>
+
+    <!-- Quick Links -->
+    <div>
+      <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+      <ul class="space-y-2 text-sm text-gray-300">
+        <li><a href="#home" class="hover:text-white transition">Home</a></li>
+        <li><a href="#about" class="hover:text-white transition">About Us</a></li>
+        <li><a href="#academics" class="hover:text-white transition">Academics</a></li>
+        <li><a href="#admissions" class="hover:text-white transition">Admissions</a></li>
+        <li><a href="#contact" class="hover:text-white transition">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <!-- School Details -->
+    <div>
+      <h3 class="text-xl font-bold mb-4">School Info</h3>
+      <p class="text-sm text-gray-300">Location: Bungoma, Kenya</p>
+      <p class="text-sm text-gray-300">Phone: +254 712 345 678</p>
+      <p class="text-sm text-gray-300">Email: info@joyjunior.ac.ke</p>
+    </div>
+
+    <!-- Newsletter -->
+    <div>
+      <h3 class="text-xl font-bold mb-4">Subscribe to Updates</h3>
+      <form class="space-y-4">
+        <input type="email" placeholder="Your email address"
+          class="w-full px-4 py-2 rounded-md text-gray-900 bg-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-gold focus:border-transparent" />
+        <button type="submit"
+          class="w-full bg-yellow-600 hover:bg-blue-900 text-blue-900 hover:text-yellow-600 font-semibold py-2 px-4 rounded-md transition">Subscribe</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="mt-12 border-t border-gray-700 pt-6 text-center text-sm text-gray-400">
+    &copy; 2025 Joy Junior Academy. All rights reserved.
+  </div>
+</footer>
+
+  
+<script>
+  // Mobile menu toggle
+  const menuToggle = document.getElementById("menu-toggle");
+  const mobileMenu = document.getElementById("mobile-menu");
+  const menuClose = document.getElementById("menu-close");
+
+  menuToggle.addEventListener("click", () => {
+    mobileMenu.classList.remove("translate-x-full");
+  });
+
+  menuClose.addEventListener("click", () => {
+    mobileMenu.classList.add("translate-x-full");
+  });
+
+  // Mobile dropdowns
+  const dropdownButtons = document.querySelectorAll("#mobile-menu button[id^='mobile-dropdown-btn']");
+
+  dropdownButtons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const dropdown = btn.nextElementSibling;
+
+      if (dropdown.classList.contains("hidden")) {
+        dropdown.classList.remove("hidden");
+      } else {
+        dropdown.classList.add("hidden");
+      }
+    });
+  });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+
+</body>
+</html>
