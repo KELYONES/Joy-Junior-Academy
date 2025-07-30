@@ -99,6 +99,82 @@
     </div>
   </div>
 </header>
+
+<!-- Mobile Side Menu -->
+<div id="mobile-menu"
+  class="fixed top-0 right-0 w-3/5 h-full bg-[#0A2342] text-white shadow-lg z-50 transform translate-x-full transition-transform duration-300 ease-in-out md:hidden">
+
+  <div class="p-4">
+    <!-- Close Button -->
+    <button id="menu-close" class="mb-6 float-right focus:outline-none">
+      <svg class="w-6 h-6" fill="none" stroke="white" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
+
+    <!-- Links -->
+    <nav class="mt-12 space-y-4">
+      <a href="./index.html" class="block hover:text-[#FFD700]">Home</a>
+      <div>
+        <button id="mobile-dropdown-btn" class="w-full text-left py-2 text-white hover:text-yellow-600">
+          About us ▾ 
+        </button>
+          <div id="mobile-dropdown" class="hidden pl-4 border-l border-gray-300">
+            <a href="./school.html" class="block px-4 py-2 text-yellow-400 hover:bg-blue-100">Our School</a>
+            <a href="./staff.html" class="block px-4 py-2 text-yellow-400 hover:bg-blue-100">Staff</a>
+            <a href="./student.html" class="block px-4 py-2 text-yellow-400 hover:bg-blue-100">Students corner</a>
+            <a href="./career.html" class="block px-4 py-2 text-yellow-400 hover:bg-blue-100">Careers</a>
+            <a href="./alumni.htm" class="block px-4 py-2 text-yellow-400 hover:bg-blue-100">Alumni</a>
+            <a href="./gallery.html" class="block px-4 py-2 text-yellow-400 hover:bg-blue-100">Gallery</a>
+            <a href="./pastoral.html" class="block px-4 py-2 text-yellow-400 hover:bg-blue-100">Pastoral Care</a>
+            <a href="./board.html" class="block px-4 py-2 text-yellow-400 hover:bg-blue-100">Board of members</a>
+          </div>
+      </div>    
+      <div>
+        <button id="mobile-dropdown-btn" class="w-full text-left py-2 text-white hover:text-yellow-600">
+          Services ▾ 
+        </button>
+          <div id="mobile-dropdown" class="hidden pl-4 border-l border-gray-300">
+            <a href="./feeding.html"class="block px-4 py-2 text-yellow-400 hover:bg-blue-100">Feeding Program</a>
+            <a href="./daycare.html" class="block px-4 py-2 text-yellow-400 hover:bg-blue-100"> Daycare</a>
+            <a href="./counsel.html" class="block px-4 py-2 text-yellow-400 hover:bg-blue-100">Counselling</a>
+            <a href="./tour.html" class="block px-4 py-2 text-yellow-400 hover:bg-blue-100">Tours</a>
+          </div>
+      </div>
+      <div>
+        <button id="mobile-dropdown-btn" class="w-full text-left py-2 text-white hover:text-yellow-600">
+          Academics ▾ 
+        </button>
+          <div id="mobile-dropdown" class="hidden pl-4 border-l border-gray-300">
+             <a href="./academic.html" class="block px-4 py-2 text-yellow-400 hover:bg-blue-100">Academic results</a>
+            <a href="./cbc.html" class="block px-4 py-2 text-yellow-400 hover:bg-blue-100">CBC Curriculum</a>
+            <a href="./practicals.html" class="block px-4 py-2 text-yellow-400 hover:bg-blue-100">Practical Lessons</a>
+            <a href="./competency.html" class="block px-4 py-2 text-yellow-400 hover:bg-blue-100">Competency Areas</a>
+            <a href="./tuition.html" class="block px-4 py-2 text-yellow-400 hover:bg-blue-100">Holiday Tuition</a>
+            <a href="./clubs.html" class="block px-4 py-2 text-yellow-400 hover:bg-blue-100">Clubs</a>
+            <a href="./graduation.html" class="block px-4 py-2 text-yellow-400 hover:bg-blue-100">Graduation</a>
+          </div>
+      </div>
+      <div>
+        <button id="mobile-dropdown-btn" class="w-full text-left py-2 text-white hover:text-yellow-600">
+          Academics ▾ 
+        </button>
+          <div id="mobile-dropdown" class="hidden pl-4 border-l border-gray-300">
+            <a href="./admission.html" class="block px-4 py-2 text-yellow-400 hover:bg-blue-100">Admission process</a>
+            <a href="./fee.html" class="block px-4 py-2 text-yellow-400 hover:bg-blue-100">Fees</a>
+            <a href="./questions.html" class="block px-4 py-2 text-yellow-400 hover:bg-blue-100">FAQs</a>
+          </div>
+      </div>    
+      <a href="./events.html" class="block hover:text-[#FFD700]">Events/News</a>
+      <a href="./contact.html" class="block hover:text-[#FFD700]">Contact Us</a>
+      <div class="pt-2 border-t border-white mt-4 space-y-2">
+        <a href="./login.html" class="block text-center border border-white py-2 rounded hover:bg-white hover:text-[#0A2342]">Login</a>
+        <a href="./signup.html" class="block text-center bg-[#FFD700] text-[#0A2342] py-2 rounded hover:bg-yellow-400">Sign Up</a>
+      </div>
+    </nav>
+  </div>
+</div>
 <!-- Overlay -->
 <div id="overlay" class="hidden fixed inset-0 bg-black bg-opacity-40 z-40 md:hidden"></div>
 <div class="relative w-full h-[500px]">
