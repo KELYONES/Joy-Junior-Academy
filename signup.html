@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign Up</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://www.google.com/recaptcha/api.js?render=6LeTeZcrAAAAAFKr69QqmJS0NQU-s-9kuLl4Ruwr"></script>
+</head>
+
+<body class="bg-blue-950">
+  <nav class="bg-[#0A2342] border-b-2 border-[#FFD700]">
+    <div class="flex items-center justify-center p-4">
+      <img src="./Academy-logo.png" class="md:w-18 md:h-18 w-16 h-16" alt="school logo">
+      <div>
+        <h2 class="text-gray-100 font-bold ml-2 text-2xl">JOY JUNIOR ACADEMY</h2>
+        <p class="text-gray-300 ml-2 font-medium">BUNGOMA, SIRISIA</p>
+      </div>
+    </div>
+  </nav>
+
+  <div class="flex items-center mt-12">
+    <div class="bg-white rounded-lg shadow-lg mx-auto max-w-md w-full p-6">
+      <h2 class="text-3xl font-bold text-center">Create Account</h2>
+      <p class="text-gray-600 text-center mt-2">Please fill in the details below to create your account.</p>
+      <div class="p-6 bg-gray-100 shadow-lg rounded-lg">
+        <form id="form" class="p-6 space-y-4">
+          <div>
+            <label for="username" class="text-sm font-medium block mb-1">Username</label>
+            <input type="text" id="username" name="username" class="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" required placeholder="Username">
+          </div>
+          <div>
+            <label for="email" class="text-sm font-medium block mb-1">Email</label>
+            <input type="email" id="email" name="email" class="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" required placeholder="Email">
+          </div>
+          <div>
+            <label for="password" class="text-sm font-medium block mb-1">Password</label>
+            <input type="password" id="password" name="password" class="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" required placeholder="Password">
+          </div>
+          <div>
+            <label for="confirmPassword" class="text-sm font-medium block mb-1">Confirm Password</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" class="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" required placeholder="Confirm Password">
+          </div>
+
+          <p id="errorMsg" class="text-sm text-red-500"></p>
+          <p id="successMsg" class="text-sm text-green-600"></p>
+
+          <button type="submit" class="w-full bg-blue-900 text-white p-2 rounded-lg hover:bg-yellow-600 hover:text-blue-900">Sign Up</button>
+        </form>
+        <p class="text-center text-sm text-gray-600 mt-4">Already have an account? <a href="./login.html" class="text-blue-500 hover:underline">Login here</a></p>
+        <p class="text-sm text-gray-600 text-center mt-2">Forgot password? <a href="#" class="text-sm text-blue-500 hover:underline">Enter Email</a></p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="bg-[#0A2342] text-gray-300 text-center p-4 mt-8 text-sm">
+      <p>&copy; 2025 Joy Junior Academy. All rights reserved.</p>
+    </div>
+  </footer>
+
+
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+    import {
+      getAuth,
+      createUserWithEmailAndPassword,
+      updateProfile
+    } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyAutMK4CVpDFQfNUSxLHYIEO7A9lVqj-5Y",
+      authDomain: "joy-junior-academy.firebaseapp.com",
+      projectId: "joy-junior-academy",
+      storageBucket: "joy-junior-academy.appspot.com",
+      messagingSenderId: "678020485163",
+      appId: "1:678020485163:web:865f8ceddf3ede0cbb9a6e"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+
+    const form = document.getElementById('form');
+    const errorMsg = document.getElementById('errorMsg');
+    const successMsg = document.getElementById('successMsg');
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const username = document.getElementById('username').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const password = document.getElementById('password').value.trim();
+      const confirmPassword = document.getElementById('confirmPassword').value.trim();
+
+      errorMsg.textContent = '';
+      successMsg.textContent = '';
+
+      if (!username || !email || !password || !confirmPassword) {
+        errorMsg.textContent = 'All fields are required.';
+        return;
+      }
+
+      if (!email.includes('@') || !email.includes('.')) {
+        errorMsg.textContent = 'Please enter a valid email address.';
+        return;
+      }
+
+      if (password.length < 8) {
+        errorMsg.textContent = 'Password must be at least 8 characters long.';
+        return;
+      }
+
+      if (password !== confirmPassword) {
+        errorMsg.textContent = 'Passwords do not match.';
+        return;
+      }
+
+      grecaptcha.ready(function () {
+  grecaptcha.execute('6LeTeZcrAAAAAFKr69QqmJS0NQU-s-9kuLl4Ruwr', { action: 'signup' }).then(function (token) {
+    // You can send `token` to your backend or just log it for now
+    console.log('reCAPTCHA token:', token);
+
+      createUserWithEmailAndPassword(auth, email, password)
+        .then((userCredential) => {
+          const user = userCredential.user;
+
+          updateProfile(user, {
+            displayName: username
+          }).then(() => {
+            successMsg.textContent = 'Account created successfully!';
+            form.reset();
+          }).catch((error) => {
+            errorMsg.textContent = 'Failed to save username: ' + error.message;
+          });
+        })
+        .catch((error) => {
+          errorMsg.textContent = error.message;
+        });
+        });
+        });
+    });
+  </script>
+</body>
+</html>
